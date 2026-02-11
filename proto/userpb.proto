@@ -121,24 +121,3 @@ message ReportArkClickReply {
 message BasicNotify {
     BasicInfo basic = 1;
 }
-
-// 证件类型
-enum CertType {
-    CERT_TYPE_CHINA_ID_CARD = 0;
-    CERT_TYPE_OVERSEAS_PASSPORT = 414;
-    CERT_TYPE_HK_MACAU_TAIWAN = 516;
-    CERT_TYPE_FOREIGN_PERMANENT = 553;
-    CERT_TYPE_OTHER = 555;
-}
-
-// 注销账号
-message DeleteAccountRequest {
-    string name = 1;
-    string cert_id = 2;
-    int32 cert_type = 3; // CertType
-}
-
-message DeleteAccountReply {
-    bool success = 1;
-    string msg = 2;
-}

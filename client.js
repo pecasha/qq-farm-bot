@@ -22,7 +22,6 @@ const { startSellLoop, stopSellLoop, debugSellFruits } = require('./src/warehous
 const { processInviteCodes } = require('./src/invite');
 const { verifyMode, decodeMode } = require('./src/decode');
 const { emitRuntimeHint, sleep } = require('./src/utils');
-const { parseCertType, deleteAccount } = require('./src/user');
 
 // ============ 帮助信息 ============
 function showHelp() {
